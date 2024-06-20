@@ -33,8 +33,8 @@ pipeline {
         }
         stage('teste da aplicacao'){
             steps{
-                sh 'sudo chmod +x teste-app.sh'
-                sh 'sudo ./teste-app.sh'
+                sh 'chmod +x ./teste-app.sh'
+                sh './teste-app.sh'
             }
         }
         stage('shutdown dos containers de teste'){

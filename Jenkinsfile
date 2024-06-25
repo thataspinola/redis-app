@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    enviroment {
+    environment {
         TAG = sh(script: 'git describe --abbrev=0',,returnStdout: true).trim()
     }
     stages {
